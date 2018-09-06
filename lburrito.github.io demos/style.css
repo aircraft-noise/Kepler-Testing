@@ -1,0 +1,72 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+#info {
+  font-family: Helvetica, Arial, sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 12px;
+}
+
+.panel {
+font-family: Helvetica;
+color: #f7f6f2;
+position: fixed;
+background-color: #1d1c22;
+padding-top: 10px;
+padding-right: 20px;
+padding-bottom: 20px;
+padding-left: 20px;
+z-index: 2;
+}
+
+
+a {
+  color: #08f;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 80%;
+  height: 25px;
+  left: 10;
+  right: 10;
+  position: relative;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}

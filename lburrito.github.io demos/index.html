@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<HTML>
+    <script src="https://unpkg.com/deck.gl@6.0.1/deckgl.min.js"></script>
+    <!-- optional if mapbox base map is needed -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
+    <link href='style.css' rel='stylesheet'>
+    <div class="panel" style="top:10%;left:10%;width:20%" >
+        <p><head>Time Slicer:</head>
+            <div id='time'></div>
+        </p>
+        <input type="range" min="1525244400.0" max="1525330800.0" value="1522566000.0 - 3600" id="timeSlider">
+        <input type="button" value="Show 24hr" id="sliceControl">
+        <input type="button" value="Animate" id="playback">
+        <p><head>Stroke Width:</head></p>
+        <input type="range" min="1" max="6" value="2" id="strokeSlider">
+        
+    </div>
+    
+    <div id='container'></div>
+    <script src='deckjs.js'>
+    </script>
+
+</HTML>
